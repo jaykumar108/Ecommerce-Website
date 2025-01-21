@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img\icon.jpeg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>Our Collections - StyleWizard</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">StyleWizard</a></div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="heading">
+            <ul id="mobileMenu">
+                <li><a href="Updated_HomePage.html">HOME</a></li>
+                <li><a href="/new_ourcollection.html">OUR COLLECTIONS</a></li>
+                <li><a href="newcontactus.html">CONTACT US</a></li>
+                <li><a href="newAboutus.html">ABOUT US</a></li>
+                <li><a href="/newLogin.html">LOGIN</a></li>
+                <li><a href="newRegister.html">REGISTER</a></li>
+                <li><a href="#"> Cart <i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
+                    <span class="cart-count"></a></li>
+
+                
+            </ul>
+        </div>
+    </header>
+
+    <style>
+       
+        .collection-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .collection-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .collection-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .collection-item:hover {
+            transform: scale(1.05);
+        }
+
+        .collection-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .collection-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .collection-item p {
+            font-size: 14px;
+            color: #777;
+            margin: 0 10px 10px;
+            text-align: center;
+        }
+
+        .collection-item .price {
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .collection-item .buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .collection-item .buttons button {
+            background-color: rgb(243, 168, 7);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .collection-item .buttons button:hover {
+            background-color: rgb(200, 140, 5);
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <div class="collection-container">
+        <h1 class="collection-title">Our Collections</h1>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="https://www.expertclipping.com/wp-content/uploads/ExpertClipping_Slide_2ff.jpg" alt="Collection 1">
+                <h3>Modern Trends</h3>
+                <p>Explore the latest in modern fashion.</p>
+                <p class="price">Rs.4999</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="https://www.expertclipping.com/wp-content/uploads/ExpertClipping_Slide_2ff.jpg" alt="Collection 2">
+                <h3>Elegant Styles</h3>
+                <p>Experience timeless elegance.</p>
+                <p class="price">Rs.799</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="https://www.expertclipping.com/wp-content/uploads/ExpertClipping_Slide_2ff.jpg" alt="Collection 3">
+                <h3>Casual Wear</h3>
+                <p>Perfect for everyday comfort.</p>
+                <p class="price">Rs.3999</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="https://www.expertclipping.com/wp-content/uploads/ExpertClipping_Slide_2ff.jpg" alt="Collection 4">
+                <h3>Accessories</h3>
+                <p>Complete your look with finesse.</p>
+                <p class="price">Rs.199</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="https://www.expertclipping.com/wp-content/uploads/ExpertClipping_Slide_2ff.jpg" alt="Collection 4">
+                <h3>Accessories</h3>
+                <p>Complete your look with finesse.</p>
+                <p class="price">Rs.199</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="collection-item">
+                <img src="https://www.expertclipping.com/wp-content/uploads/ExpertClipping_Slide_2ff.jpg" alt="Collection 4">
+                <h3>Accessories</h3>
+                <p>Complete your look with finesse.</p>
+                <p class="price">Rs.1999</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="https://themelooks.com/wp-content/uploads/2019/05/2.jpg" alt="Collection 4">
+                <h3>Accessories</h3>
+                <p>Complete your look with finesse.</p>
+                <p class="price">Rs.1999</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="collection-item">
+                <img src="https://themelooks.com/wp-content/uploads/2019/05/2.jpg" alt="Collection 4">
+                <h3>Accessories</h3>
+                <p>Complete your look with finesse.</p>
+                <p class="price">Rs.199</p>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are dedicated to bringing you the best in online shopping. Explore our diverse range of products and enjoy exclusive deals.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StyleWizard. All rights reserved.</p>
+        </div>
+      </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('show');
+        }
+
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('fixed-header');
+            } else {
+                header.classList.remove('fixed-header');
+            }
+        });
+    </script>
+</body>
+</html>
