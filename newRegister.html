@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img\icon.jpeg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>Register - StyleWizard</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">StyleWizard</a></div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="heading">
+            <ul id="mobileMenu">
+                <li><a href="Updated_HomePage.html">HOME</a></li>
+                
+                <li><a href="/new_ourcollection.html">OUR COLLECTIONS</a></li>
+                <li><a href="/newcontactus.html">CONTACT US</a></li>
+                <li><a href="/newAboutus.html">ABOUT US</a></li>
+                <li><a href="/newLogin.html">LOGIN</a></li>
+                <li><a href="/newRegister.html">REGISTER</a></li>
+                <li><a href="#"> Cart <i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
+                    <span class="cart-count"></a></li>
+            </ul>
+        </div>
+    </header>
+<body>
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register - StyleWizard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+    
+            .registration-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+    
+            .registration-form-box {
+                background-color: #fff;
+                padding: 35px;
+                border-radius: 12px;
+                box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+                width: 100%;
+                max-width: 460px;
+            }
+    
+            .form-header {
+                text-align: center;
+                font-size: 26px;
+                margin-bottom: 25px;
+                color: #333;
+            }
+    
+            .input-group {
+                margin-bottom: 22px;
+            }
+    
+            .input-group label {
+                font-size: 15px;
+                color: #555;
+                margin-bottom: 7px;
+                display: block;
+            }
+    
+            .input-field {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 12px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 15px;
+            }
+    
+            .submit-button {
+                width: 100%;
+                padding: 12px;
+                background-color: rgb(243, 168, 7);
+                border: none;
+                border-radius: 8px;
+                font-size: 18px;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            .submit-button:hover {
+                background-color: #e1a500;
+            }
+    
+            .alternative-login {
+                display: flex;
+                justify-content: center;
+                gap: 18px;
+                margin-top: 22px;
+            }
+    
+            .alternative-login a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 22px;
+                padding: 12px;
+                border-radius: 50%;
+            }
+    
+            .facebook-btn {
+                background-color: #3b5998;
+            }
+    
+            .google-btn {
+                background-color: #db4437;
+            }
+    
+            .twitter-btn {
+                background-color: #1da1f2;
+            }
+    
+            .alternative-login a:hover {
+                opacity: 0.85;
+            }
+    
+            .sign-in-link {
+                text-align: center;
+                margin-top: 15px;
+            }
+    
+            .sign-in-link a {
+                font-size: 15px;
+                color: #0077b5;
+                text-decoration: none;
+            }
+    
+            .sign-in-link a:hover {
+                text-decoration: underline;
+            }
+    
+            @media (max-width: 768px) {
+                .registration-form-box {
+                    padding: 18px;
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="registration-wrapper">
+            <form class="registration-form-box">
+                <h2 class="form-header">Create Your Account</h2>
+    
+                <div class="input-group">
+                    <label for="full-name" class="input-label">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" class="input-field" placeholder="Enter your full name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email-address" class="input-label">Email Address</label>
+                    <input type="email" id="email-address" name="email-address" class="input-field" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" id="password" name="password" class="input-field" placeholder="Create a password" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="confirm-password" class="input-label">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="input-field" placeholder="Confirm your password" required>
+                </div>
+    
+                <input type="submit" value="Register Now" class="submit-button">
+    
+                <div class="sign-in-link">
+                    <p>Already have an account? <a href="/newLogin.html">Login here</a></p>
+                </div>
+    
+                
+            </form>
+        </div>
+    
+    </body>
+    </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are dedicated to bringing you the best in online shopping. Explore our diverse range of products and enjoy exclusive deals.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StyleWizard. All rights reserved.</p>
+        </div>
+      </footer>
+      
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('show');
+        }
+
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('fixed-header');
+            } else {
+                header.classList.remove('fixed-header');
+            }
+        });
+    </script>
+</body>
+</html>
